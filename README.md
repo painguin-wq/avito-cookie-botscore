@@ -5,10 +5,14 @@
 - `SOLUTION.md` — кратко про подход, эксперименты и ограничения
 ## Запуск
 Python 3.13.14, `random_state=42`.
+
+1. Установить зависимости
 ```
 pip install pandas==3.0.6 numpy==2.5.3 scikit-learn==1.9.1 lightgbm==4.7.0
 ```
-Данные в папке `data/`, дальше запустить `solution.ipynb`. 
-Модель: LightGBM bag из пяти сидов на поведенческих агрегатах, peer-ranks и признаках catalog-crawl. 
+2. Распаковать events.csv.gz в папке data/
+3. Запустить solution.ipynb
 
+   
+Модель: LightGBM bag из пяти сидов на поведенческих агрегатах, peer-ranks и признаках catalog-crawl. 
 На скрытой тестовой валидации Precision@Recall>=0.70 = **0.87297**
